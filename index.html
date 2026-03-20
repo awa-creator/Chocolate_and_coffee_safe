@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+    <title>Chocolate and Coffee Safe</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav_logo">
+                <h2 class="logo_text"><span class="choco">Chocolate </span>& Coffee Safe <i class="fa-solid fa-mug-hot" style="color: #dba95c;"></i></h2>
+            </a>
+            <ul class="nav_menu">
+                <li class="nav_item"><a href="#Home" class="nav_link">Accueil</a></li>
+                <li class="nav_item"><a href="#About" class="nav_link">A propos</a></li>
+                <li class="nav_item"><a href="#Category" class="nav_link">Categorie</a></li>
+                <li class="nav_item"><a href="#Menu" class="nav_link">Menu</a></li>
+                <li class="nav_item"><a href="#Product" class="nav_link">Produit</a></li>
+                <li class="nav_item"><a href="#Contact" class="nav_link">Contact</a></li>
+            </ul>
+            <!-- FIX #3 : bouton hamburger retiré d'ici, créé uniquement dans script.js -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section class="main_section" id="Home">
+            <div class="section_content">
+                <div class="main_tittle">
+                    <h3 class="tittle">Bienvenue dans </h3>
+                    <h3 class="tittle1">notre havre de chocolat et de café,</h3>
+                    <h3 class="tittle2">où chaque instant est un pur bonheur !</h3>
+                    <div class="button">
+                        <a href="#Order_now" class="button_order">Commandez maintenant</a>
+                        <a href="#Contact" class="button_contact">Contactez-nous</a>
+                    </div>
+                </div>
+                <div class="main_image">
+                    <img src="image/img3.png" alt="" class="img_ccs">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section A propos -->
+        <section class="about_section" id="About">
+            <div class="about_section_content">
+                <div class="about_detail">
+                    <h2 class="section_tittle">A propos</h2>
+                    <p class="about_text">Chez Chocolate and Coffee Safe, nous célébrons la magie du chocolat et la richesse du café, tout en honorant des traditions comme celles du café Touba, qui occupe une place spéciale dans la culture sénégalaise. Notre passion nous pousse à sélectionner des produits exceptionnels provenant d'origines éthiques et durables.
+                    Chaque bouchée de chocolat et chaque gorgée de café vous emmènent dans un voyage sensoriel unique, conçu pour ravir vos papilles. Nous croyons que le plaisir doit être partagé, tout comme le café Touba, souvent partagé lors de moments conviviaux. C'est pourquoi nous nous engageons à offrir des expériences authentiques et mémorables.
+                    Rejoignez-nous dans cette délicieuse aventure et explorez un monde où le chocolat et le café sont à la fois un art et une passion. Bienvenue dans notre univers !</p>
+                </div>
+                <div class="image_about_section">
+                    <img src="image/img1.jpg" alt="About" class="img_about">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Catégorie -->
+        <section class="categorie_section" id="Category">
+            <h2 class="categorie_tittle">Categorie</h2>
+            <div class="section_content">
+                <div class="categorie_container swiper">
+                    <div class="slider_categorie">
+                        <ul class="categorie_list swiper-wrapper">
+                            <li class="categorie_item swiper-slide">
+                                <img src="image/3.png" alt="Chocolat" class="categorie_img">
+                                <h2 class="name">Chocolat</h2>
+                            </li>
+                            <li class="categorie_item swiper-slide">
+                                <img src="image/coff.png" alt="Café" class="categorie_img">
+                                <h2 class="name">Café</h2>
+                            </li>
+                            <li class="categorie_item swiper-slide">
+                                <img src="image/5.png" alt="Produit" class="categorie_img">
+                                <h2 class="name">Produit</h2>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Menu Chocolat -->
+        <section class="chocolate_section" id="Menu">
+            <h2 class="chocolate_tittle" id="Order_now">Menu Chocolat</h2>
+            <div class="section_content">
+                <ul class="chocolate_list">
+                    <li class="chocolate_item">
+                        <img src="image/choco1.jpg" alt="Mocha" class="chocolate_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Chocolat chaud dans une tasse</h2>
+                        <h3>800 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="chocolate_item">
+                        <img src="image/choco2.png" alt="Mocha" class="chocolate_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Mocha au chocolat blanc 30</h2>
+                        <h3>1.500 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="chocolate_item">
+                        <img src="image/choco3.jpg" alt="Creamy" class="chocolate_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Glace au chocolat crémeuse faite maison</h2>
+                        <h3>1.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="chocolate_item">
+                        <img src="image/choco4.jpg" alt="Milkshake" class="chocolate_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Milkshake au chocolat et à la banane</h2>
+                        <h3>2.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="chocolate_item">
+                        <img src="image/choco5.jpg" alt="Oreo" class="chocolate_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Milkshake Oreo et chocolat</h2>
+                        <h3>2.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="chocolate_item">
+                        <img src="image/choco6.jpg" alt="Cheesecake" class="chocolate_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Trifle au cheesecake au chocolat</h2>
+                        <h3>3.500 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Menu Café -->
+        <section class="coffee_section">
+            <h2 class="coffee_tittle">Menu Café</h2>
+            <div class="section_content">
+                <ul class="coffee_list">
+                    <li class="coffee_item">
+                        <img src="image/coffee1" alt="Ice Cream" class="coffee_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Glace au café</h2>
+                        <h3>1.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="coffee_item">
+                        <img src="image/coffee2.jpg" alt="Iced coffee" class="coffee_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Café glacé au caramel et aux noisettes</h2>
+                        <h3>2.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="coffee_item">
+                        <img src="image/coffee3.jpg" alt="Cappuccino" class="coffee_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Cappuccino</h2>
+                        <h3>800 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="coffee_item">
+                        <img src="image/coffee4.jpg" alt="Affogato" class="coffee_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Affogato</h2>
+                        <h3>1.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="coffee_item">
+                        <img src="image/coffee5.jpg" alt="Café Touba" class="coffee_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Tasse de café Touba</h2>
+                        <h3>800 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                    <li class="coffee_item">
+                        <img src="image/coffee6.jpg" alt="Latte" class="coffee_img">
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star" style="color: #dba95c;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #dba95c;"></i>
+                        </div>
+                        <h2 class="name">Latte Macchiato</h2>
+                        <h3>1.000 CFA</h3>
+                        <span class="btn_cof">Commandez maintenant</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Produit Café -->
+        <section class="product_section" id="Product">
+            <h2 class="product_tittle">Produit Café</h2>
+            <!-- FIX #2 : "section content" (deux classes) → "section_content" (une classe) -->
+            <div class="section_content">
+                <ul class="product_list">
+                    <li class="product_item">
+                        <img src="image/p1.png" alt="product" class="product_img">
+                        <h2 class="name">Café Arabica</h2>
+                        <div class="prod_p">
+                            <span class="price">2.500 CFA</span>
+                            <span class="btn_prod">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="image/p2.png" alt="product" class="product_img">
+                        <h2 class="name">Café Botero</h2>
+                        <div class="prod_p">
+                            <span class="price">1.000 CFA</span>
+                            <span class="btn_prod">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="image/p3.png" alt="product" class="product_img">
+                        <h2 class="name">Café Touba</h2>
+                        <div class="prod_p">
+                            <span class="price">2.000 CFA</span>
+                            <span class="btn_prod">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="image/p4.png" alt="product" class="product_img">
+                        <h2 class="name">Café Royal Bay</h2>
+                        <div class="prod_p">
+                            <span class="price">1.000 CFA</span>
+                            <span class="btn_prod">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="image/p5.png" alt="product" class="product_img">
+                        <h2 class="name">Terrains Sacrés</h2>
+                        <div class="prod_p">
+                            <span class="price">2.500 CFA</span>
+                            <span class="btn_prod">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="image/p6.png" alt="product" class="product_img">
+                        <h2 class="name">Café Presto</h2>
+                        <div class="prod_p">
+                            <span class="price">2.000 CFA</span>
+                            <span class="btn_prod">Achetez maintenant</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Produit Chocolat -->
+        <section class="productc_section">
+            <h2 class="productc_tittle">Produit Chocolat</h2>
+            <!-- FIX #2 : "section content" (deux classes) → "section_content" (une classe) -->
+            <div class="section_content">
+                <ul class="productc_list">
+                    <li class="productc_item">
+                        <img src="image/c10.png" alt="product" class="productc_img">
+                        <h2 class="namec">Pâte à tartiner Louis Vuitton</h2>
+                        <div class="prod_pc">
+                            <span class="pricec">2.000 CFA</span>
+                            <span class="btn_prodc">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="productc_item">
+                        <img src="image/c2.png" alt="product" class="productc_img">
+                        <h2 class="namec">Barre de chocolat aux pistaches de Dubaï</h2>
+                        <div class="prod_pc">
+                            <span class="pricec">2.500 CFA</span>
+                            <span class="btn_prodc">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="productc_item">
+                        <img src="image/C3.png" alt="product" class="productc_img">
+                        <h2 class="namec">Boîte de chocolat personnalisée</h2>
+                        <div class="prod_pc">
+                            <span class="pricec">5.000 CFA</span>
+                            <span class="btn_prodc">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="productc_item">
+                        <img src="image/C4.png" alt="product" class="productc_img">
+                        <h2 class="namec">Boîte de chocolat aux fraises personnalisée</h2>
+                        <div class="prod_pc">
+                            <span class="pricec">5.000 CFA</span>
+                            <span class="btn_prodc">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="productc_item">
+                        <img src="image/C9.png" alt="product" class="productc_img">
+                        <h2 class="namec">Boîte de chocolat Jewel</h2>
+                        <div class="prod_pc">
+                            <span class="pricec">6.000 CFA</span>
+                            <span class="btn_prodc">Achetez maintenant</span>
+                        </div>
+                    </li>
+                    <li class="productc_item">
+                        <img src="image/c6.png" alt="product" class="productc_img">
+                        <h2 class="namec">Macaron au Chocolat</h2>
+                        <div class="prod_pc">
+                            <span class="pricec">2.500 CFA</span>
+                            <span class="btn_prodc">Achetez maintenant</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="contact_section" id="Contact">
+            <h4 class="contact_tittle" id="Contact_us">Contactez-nous</h4>
+            <div class="contact_item">
+                <div class="contact">
+                    <div class="first_text">Restons en contact</div>
+                    <img src="image/Chocolate & Coffee Safe.png" alt="" class="img_contact">
+                    <div class="social_media_list">
+                        <span class="second_text">Rejoignez-nous</span>
+                        <ul class="social_media">
+                            <li><a href="#" class="social_link"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#" class="social_link"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" class="social_link"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#" class="social_link"><i class="fa-brands fa-snapchat"></i></a></li>
+                            <li><a href="#" class="social_link"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="submit_form">
+                    <form action="">
+                        <div class="input_box">
+                            <!-- FIX CSS label flottant : placeholder=" " ajouté sur chaque input -->
+                            <input type="text" class="input" placeholder=" " required>
+                            <label>Nom</label>
+                        </div>
+                        <div class="input_box">
+                            <input type="email" class="input" placeholder=" " required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input_box">
+                            <input type="tel" class="input" placeholder=" " required>
+                            <label>Téléphone</label>
+                        </div>
+                        <div class="input_box">
+                            <textarea class="input" placeholder=" " required id="message" cols="30" rows="10"></textarea>
+                            <label>Message</label>
+                        </div>
+                        <button id="submitBtn" type="button" class="btn_sub">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FIX #4 : footer déplacé À L'INTÉRIEUR du body (était après </body>) -->
+    <footer class="end">
+        <p class="text_end">© Copyright Tous droits réservés 2024</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script principal -->
+    <script src="script.js"></script>
+    <!-- FIX #3 : script inline hamburger SUPPRIMÉ — présent uniquement dans script.js -->
+
+</body>
+</html>

@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Galada&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img {
+    width: 100%;
+}
+:root {
+    --white-color: #fff;
+    --primary-color: rgb(112, 63, 4);
+    --secondary-color: rgb(219, 169, 92);
+    --box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+/* ---- Titres ---- */
+.section_tittle {
+    text-align: center;
+    padding: 70px;
+    font-size: x-large;
+}
+/* FIX #5 : centrage automatique de la barre au lieu d'un margin-left fixe */
+.section_tittle::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.categorie_tittle {
+    text-align: center;
+    padding: 70px;
+    font-size: x-large;
+    color: #030303;
+}
+.categorie_tittle::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 0 auto; /* FIX #5 */
+}
+.chocolate_tittle {
+    text-align: center;
+    padding: 70px;
+    font-size: x-large;
+    margin-top: 100px;
+}
+.chocolate_tittle::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 0 auto; /* FIX #5 */
+}
+.coffee_tittle {
+    text-align: center;
+    padding: 70px;
+    font-size: x-large;
+}
+.coffee_tittle::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 0 auto; /* FIX #5 */
+}
+.product_tittle {
+    text-align: center;
+    padding: 70px;
+    font-size: x-large;
+}
+.product_tittle::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 0 auto; /* FIX #5 */
+}
+.productc_tittle {
+    text-align: center;
+    padding: 70px;
+    font-size: x-large;
+}
+.productc_tittle::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 0 auto; /* FIX #5 */
+}
+/* FIX #4 : suppression des offsets position absolue cassés, remplacement par du flux normal */
+.contact_tittle {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+.contact_tittle::after {
+    content: "";
+    width: 180px;
+    height: 5px;
+    display: block;
+    background: rgb(112, 63, 4);
+    border-radius: 5px;
+    margin: 8px auto 0; /* FIX #5 */
+}
+
+/* ---- Navbar ---- */
+header {
+    background-color: #552A1A;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+.navbar .nav_logo .logo_text {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+.choco {
+    color: rgb(219, 169, 92);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .nav_menu {
+    display: flex;
+    gap: 10px;
+}
+/* FIX #2 : .navbar retiré du groupe de sélecteurs pour éviter l'écrasement de ses styles */
+.nav_menu, .nav_link {
+    padding: 10px 18px;
+    font-size: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.nav_link {
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav_item {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ---- Section Hero ---- */
+.main_section {
+    background: #552a1a;
+    padding-top: 80px;
+}
+.section_content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow: visible;
+}
+/* FIX #6 : suppression de left: 60px qui causait un débordement horizontal */
+.img_ccs {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+.tittle {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Charm';
+    color: white;
+    margin-left: 10px;
+}
+.tittle1 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Charm';
+    color: var(--secondary-color);
+    margin-left: 25px;
+}
+.tittle2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Charm';
+    color: white;
+    margin-left: 45px;
+}
+.button {
+    position: relative;
+    left: 300px;
+    top: 80px;
+    color: #fff;
+    text-decoration: none;
+}
+.button_order, .button_contact {
+    background-color: rgb(219, 169, 92);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+/* ---- About ---- */
+.about_section {
+    padding: 60px;
+    background: #fff;
+    border-bottom: 2px solid #3d2602;
+}
+.about_section .about_section_content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.img_about {
+    width: 600px;
+    height: 500px;
+    border-radius: 100%;
+}
+.about_text {
+    line-height: 30px;
+    text-align: center;
+}
+
+/* ---- Catégorie ---- */
+.categorie_section {
+    color: #b66e2b;
+}
+.categorie_section .categorie_item {
+    display: flex;
+    padding: 35px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.categorie_section .categorie_item .name {
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-style: italic;
+    color: #030303;
+}
+.categorie_section .categorie_item .text {
+    line-height: 15px;
+    font-style: italic;
+}
+.categorie_img {
+    width: 40%;
+    height: 40%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    border-radius: 100px;
+}
+
+/* ---- Menu Chocolat ---- */
+.chocolate_section {
+    background-image: url(image/vec3.jpg);
+    color: #ffffff;
+    padding-bottom: 60px;
+    height: auto;
+    overflow: visible;
+}
+.chocolate_section .chocolate_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* FIX #7 : calc plus robuste */
+.chocolate_section .chocolate_list .chocolate_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3 - 20px);
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+.chocolate_section .chocolate_list .chocolate_item .chocolate_img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+.chocolate_section .chocolate_list .chocolate_item .name {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 1000;
+}
+.btn_cof {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 2px;
+    width: 100px;
+    position: relative;
+    left: 90px;
+    font-size: 10px;
+    background-color: var(--secondary-color);
+}
+.chocolate_item .rating {
+    color: var(--secondary-color);
+}
+.chocolate_item:hover {
+    box-shadow: var(--box-shadow);
+    background: #552A1A;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ---- Menu Café ---- */
+.coffee_section {
+    color: #080808;
+    padding-bottom: 60px;
+    height: auto;
+    overflow: visible;
+}
+.coffee_section .coffee_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* FIX #7 : calc plus robuste */
+.coffee_section .coffee_list .coffee_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3 - 20px);
+    justify-content: space-between;
+}
+.coffee_section .coffee_list .coffee_item .coffee_img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+.coffee_section .coffee_list .coffee_item .name {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 1000;
+}
+.coffee_item .rating {
+    color: var(--secondary-color);
+}
+.coffee_item:hover {
+    box-shadow: var(--box-shadow);
+    background: #552A1A;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ---- Produit Café ---- */
+.product_section {
+    background-image: url(image/vec3.jpg);
+    color: #ffffff;
+    padding: 10px 10px 60px;
+    height: auto;
+    overflow: visible;
+}
+.product_section .product_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* FIX #7 : calc plus robuste */
+.product_section .product_list .product_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3 - 20px);
+    justify-content: space-between;
+}
+.product_section .product_list .product_item .product_img {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+.product_section .product_list .product_item .name {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    font-style: italic;
+}
+.product_item:hover {
+    box-shadow: var(--box-shadow);
+    background: #552A1A;
+    border-radius: 10px;
+    padding: 10px;
+}
+.price {
+    display: flex;
+    border: 2px solid var(--secondary-color);
+    background: var(--secondary-color);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+}
+.btn_prod {
+    border: 2px solid var(--secondary-color);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10px;
+}
+.btn_prod:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+.prod_p {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ---- Produit Chocolat ---- */
+.productc_section {
+    background: #fff;
+    color: #030303;
+    padding: 10px 10px 60px;
+    height: auto;
+    overflow: visible;
+}
+.productc_section .productc_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+/* FIX #7 : calc plus robuste */
+.productc_section .productc_list .productc_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3 - 20px);
+    justify-content: space-between;
+}
+.productc_section .productc_list .productc_item .productc_img {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+.productc_section .productc_list .productc_item .namec {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+}
+.productc_item:hover {
+    box-shadow: var(--box-shadow);
+    background: #552A1A;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pricec {
+    display: flex;
+    border: 2px solid var(--secondary-color);
+    background: var(--secondary-color);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+}
+.btn_prodc {
+    border: 2px solid var(--secondary-color);
+    color: black;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10px;
+}
+.btn_prodc:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+.prod_pc {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ---- Contact ---- */
+.contact_section {
+    position: relative;
+    width: 100%;
+    min-height: 130vh;
+    background: #552a1a;
+    display: flex;
+    flex-direction: column;      /* FIX #4 : permet au titre de s'afficher au-dessus du formulaire */
+    justify-content: center;
+    align-items: center;
+}
+.contact_item {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;            /* FIX #4 : marge réduite, plus de margin-right arbitraire */
+    max-width: 820px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact {
+    background: #ffffff;
+    position: relative;
+    top: 70px;
+}
+.submit_form {
+    background-color: var(--secondary-color);
+}
+.first_text {
+    position: relative;
+    bottom: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 35px;
+    color: #552a1a;
+}
+.social_media {
+    display: flex;
+    list-style: none;
+    padding-left: 40px;
+}
+.social_link {
+    display: flex;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+.social_link i:hover {
+    background: #552A1A;
+    color: #fff;
+}
+i {
+    color: #552a1a;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* FIX #8 : padding-left excessif réduit */
+.second_text {
+    color: #552A1A;
+    font-weight: 500;
+    padding-left: 20px;
+}
+/* FIX #3 : overflow: hidden remplacé par visible pour éviter le clipping des labels flottants */
+form {
+    padding: 0 50px;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+.input_box {
+    height: 40px;
+    width: 90%;
+    margin: 30px 0;
+    position: relative;
+}
+.input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.input_box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    padding-left: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+    pointer-events: none;
+}
+/* FIX #11 : utilisation de :not(:placeholder-shown) pour éviter le label flottant sur champ vide */
+.input_box .input:focus ~ label,
+.input_box .input:not(:placeholder-shown) ~ label {
+    top: 4px;                    /* FIX #3 : valeur > 0 pour éviter le clipping */
+    left: 10px;
+    background: var(--secondary-color);
+    font-weight: 500;
+    font-size: 12px;
+    transform: translateY(-100%);
+}
+.btn_sub {
+    position: relative;
+    top: 100px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    height: 45px;
+    width: 30%;
+    font-size: 16px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* ---- Footer ---- */
+.end {
+    background: #552A1A;
+    box-shadow: var(--box-shadow);
+}
+.text_end {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+}
+
+/* ================================================
+   BOUTON MENU MOBILE
+   (FIX #9 : suppression du doublon .nav-toggle — seul .hamburger est conservé)
+   ================================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+    z-index: 1100;
+}
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #dba95c;
+    border-radius: 3px;
+    transition: all 0.35s ease;
+    transform-origin: center;
+}
+.hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+.nav_overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+}
+.nav_overlay.open { display: block; }
+
+
+/* ================================================
+   TABLETTE — max 1024px
+   ================================================ */
+@media (max-width: 1024px) {
+
+    .navbar { padding: 12px 20px !important; }
+
+    .main_section { padding-top: 75px !important; }
+
+    /* Hero uniquement : image au-dessus du texte */
+    .main_section .section_content {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+        gap: 20px !important;
+        max-width: 100% !important;
+        align-items: center !important;
+    }
+    /* Toutes les autres sections : colonne simple, pas d'inversion */
+    .categorie_section .section_content,
+    .chocolate_section .section_content,
+    .coffee_section .section_content,
+    .product_section .section_content,
+    .productc_section .section_content {
+        flex-direction: column !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        max-width: 100% !important;
+    }
+    .main_image { display: flex !important; justify-content: center !important; }
+    .img_ccs { width: 300px !important; height: auto !important; position: static !important; }
+
+    .button {
+        position: static !important;
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+        margin-top: 20px !important;
+    }
+
+    .about_section_content {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 40px 20px !important;
+        gap: 24px !important;
+    }
+    .img_about { width: 100% !important; max-width: 480px !important; height: auto !important; border-radius: 12px !important; }
+
+    .chocolate_list,
+    .coffee_list,
+    .product_list,
+    .productc_list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+        padding: 20px 16px 40px !important;
+        width: 100% !important;
+    }
+    .chocolate_item,
+    .coffee_item,
+    .product_item,
+    .productc_item {
+        width: 100% !important;
+        min-width: unset !important;
+        max-width: 100% !important;
+        flex: unset !important;
+        position: static !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    .chocolate_img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 160px !important;
+        margin-left: 0 !important;
+        border-radius: 12px !important;
+        object-fit: cover !important;
+    }
+    .btn_cof {
+        position: static !important;
+        width: auto !important;
+        display: inline-block !important;
+        margin: 8px auto !important;
+    }
+
+    .contact_item {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        margin: 40px 20px !important;
+        max-width: 540px !important;
+    }
+    .contact_tittle {
+        text-align: center !important;
+        padding: 40px 20px 20px !important;
+    }
+}
+
+
+/* ================================================
+   MOBILE — max 768px
+   ================================================ */
+@media (max-width: 768px) {
+
+    /* ---- NAVBAR ---- */
+    .navbar {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        padding: 12px 16px !important;
+    }
+    .logo_text { font-size: 1rem !important; white-space: nowrap !important; }
+    .hamburger { display: flex !important; }
+    .nav_menu {
+        position: fixed !important;
+        top: 0 !important;
+        right: -100% !important;
+        height: 100vh !important;
+        width: 70% !important;
+        max-width: 280px !important;
+        background: rgba(20, 10, 5, 0.97) !important;
+        backdrop-filter: blur(8px) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 28px !important;
+        padding: 80px 20px !important;
+        list-style: none !important;
+        transition: right 0.4s ease !important;
+        z-index: 1000 !important;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5) !important;
+    }
+    .nav_menu.open { right: 0 !important; }
+    .nav_link { font-size: 1rem !important; }
+
+    /* ---- HERO ---- */
+    .main_section { padding-top: 65px !important; }
+    .main_section .section_content {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 20px 16px 40px !important;
+        gap: 16px !important;
+    }
+    .main_tittle { order: 1 !important; width: 100% !important; }
+    .main_image  { order: 2 !important; width: 100% !important; display: flex !important; justify-content: center !important; }
+    .img_ccs     { width: 240px !important; height: auto !important; position: static !important; }
+    .tittle  { font-size: 1.3rem !important; margin-left: 0 !important; text-align: center !important; }
+    .tittle1 { font-size: 1.1rem !important; margin-left: 0 !important; text-align: center !important; }
+    .tittle2 { font-size: 1rem !important;   margin-left: 0 !important; text-align: center !important; }
+    .button {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        margin-top: 20px !important;
+    }
+    .button_order, .button_contact { width: 200px !important; text-align: center !important; }
+
+    /* ---- PADDING LATERAL SECTIONS ---- */
+    .main_section,
+    .about_section,
+    .categorie_section,
+    .chocolate_section,
+    .coffee_section,
+    .product_section,
+    .productc_section {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* ---- TITRES ---- */
+    .chocolate_tittle,
+    .coffee_tittle,
+    .product_tittle,
+    .productc_tittle,
+    .categorie_tittle,
+    .section_tittle {
+        font-size: 1.4rem !important;
+        text-align: center !important;
+        padding: 30px 20px !important;
+        margin-top: 0 !important;
+    }
+    .chocolate_tittle::after,
+    .coffee_tittle::after,
+    .product_tittle::after,
+    .productc_tittle::after,
+    .categorie_tittle::after,
+    .section_tittle::after {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* ---- A PROPOS ---- */
+    .about_section_content {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 20px !important;
+        gap: 20px !important;
+    }
+    .img_about { width: 100% !important; max-width: 320px !important; height: auto !important; border-radius: 12px !important; }
+
+    /* ---- CATEGORIE (SWIPER) ---- */
+    .categorie_section .section_content {
+        flex-direction: column !important;
+        padding: 0 8px 20px !important;
+        overflow: hidden !important;
+    }
+    .categorie_container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+    .slider_categorie {
+        width: 100% !important;
+    }
+    .categorie_item {
+        padding: 16px !important;
+        margin-bottom: 0 !important;
+    }
+    .categorie_img {
+        width: 55% !important;
+        height: auto !important;
+        margin: 0 auto 12px !important;
+        display: block !important;
+    }
+    .categorie_item .name {
+        font-size: 1.3rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* ---- MENU CHOCOLAT & CAFE : grille 2 colonnes ---- */
+    .chocolate_list,
+    .coffee_list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+        padding: 10px 4px 40px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        align-items: start !important;
+    }
+    .chocolate_item,
+    .coffee_item {
+        width: 100% !important;
+        min-width: unset !important;
+        max-width: 100% !important;
+        flex: unset !important;
+        position: static !important;
+        top: auto !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+    .chocolate_img {
+        width: 100% !important;
+        height: 100px !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        object-fit: cover !important;
+        border-radius: 10px !important;
+        display: block !important;
+    }
+    .coffee_img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100px !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin: 0 auto 8px !important;
+    }
+    .btn_cof {
+        position: static !important;
+        left: auto !important;
+        width: auto !important;
+        display: block !important;
+        margin: 8px auto !important;
+    }
+
+    /* ---- PRODUIT CAFE & CHOCOLAT : grille 2 colonnes ---- */
+    .product_list,
+    .productc_list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+        padding: 10px 4px 40px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        align-items: start !important;
+    }
+    .product_item,
+    .productc_item {
+        width: 100% !important;
+        min-width: unset !important;
+        max-width: 100% !important;
+        flex: unset !important;
+        position: static !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+    .product_img,
+    .productc_img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 120px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto 8px !important;
+    }
+    .prod_p, .prod_pc {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 6px !important;
+    }
+
+    /* ---- CONTACT ---- */
+    .contact_section {
+        min-height: auto !important;
+        padding: 30px 14px 40px !important;
+    }
+    .contact_tittle {
+        text-align: center !important;
+        padding: 20px 20px 10px !important;
+    }
+    .contact_item {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: unset !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        border-radius: 14px !important;
+        overflow: hidden !important;
+        grid-template-columns: unset !important;
+    }
+    .contact {
+        position: static !important;
+        top: auto !important;
+        padding: 16px !important;
+    }
+    .first_text {
+        position: static !important;
+        bottom: auto !important;
+        font-size: 1.3rem !important;
+        padding: 16px 16px 8px !important;
+        text-align: center !important;
+    }
+    .img_contact {
+        max-width: 140px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .social_media_list { text-align: center !important; }
+    .second_text { padding-left: 0 !important; text-align: center !important; display: block !important; }
+    .social_media { justify-content: center !important; padding-left: 0 !important; }
+    .submit_form { width: 100% !important; }
+    form {
+        padding: 20px 16px !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+    .input_box { margin: 18px 0 !important; width: 100% !important; }
+    .btn_sub {
+        position: static !important;
+        top: auto !important;
+        width: 70% !important;
+        display: block !important;
+        margin: 20px auto 8px !important;
+    }
+}
+
+
+/* ================================================
+   PETIT MOBILE — max 480px
+   ================================================ */
+@media (max-width: 480px) {
+
+    .logo_text { font-size: 0.85rem !important; }
+    .tittle  { font-size: 1.1rem !important; }
+    .tittle1 { font-size: 1rem !important; }
+    .tittle2 { font-size: 0.9rem !important; }
+    .img_ccs { width: 200px !important; }
+
+    .chocolate_list,
+    .coffee_list,
+    .product_list,
+    .productc_list {
+        grid-template-columns: 1fr !important;
+        padding: 10px !important;
+    }
+    .chocolate_item,
+    .coffee_item,
+    .product_item,
+    .productc_item { max-width: 320px !important; margin: 0 auto !important; }
+
+    .chocolate_img,
+    .coffee_img { height: 100px !important; }
+
+    .categorie_img { width: 60% !important; margin: 0 auto !important; display: block !important; }
+
+    .btn_sub { width: 80% !important; padding: 12px !important; }
+    .text_end { font-size: 0.8rem !important; text-align: center !important; padding: 10px !important; }
+}
+
+
+/* ================================================
+   ULTRA PETIT — max 360px
+   ================================================ */
+@media (max-width: 360px) {
+    .logo_text { font-size: 0.78rem !important; }
+    .nav_menu  { width: 85% !important; }
+}
