@@ -84,16 +84,27 @@ header .navbar { display: flex; padding: 16px 24px; align-items: center; justify
 .about_text { line-height: 1.8; text-align: left; color: #333; font-size: 0.95rem; }
 
 /* ================================================
+   CATEGORIE
+   ================================================ */
+.categorie_section { color: #b66e2b; overflow: hidden; }
+.categorie_section .section_content { padding: 0 60px 40px; display: block; }
+.categorie_container { width: 100%; overflow: hidden; }
+.slider_categorie { width: 100%; }
+.categorie_item { display: flex; flex-direction: column; text-align: center; align-items: center; padding: 30px; }
+.categorie_img { width: 35%; max-width: 200px; height: auto; aspect-ratio: 1; border-radius: 50%; margin-bottom: 16px; object-fit: cover; }
+.categorie_item .name { font-size: 1.6rem; font-style: italic; color: #030303; }
+
+/* ================================================
    MENU CHOCOLAT
    ================================================ */
 .chocolate_section { background-image: url(image/vec3.jpg); background-size: cover; color: var(--white); padding-bottom: 60px; }
-.chocolate_section .section_content { padding: 0 40px 20px; display: block; }
-.chocolate_section .chocolate_list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; }
-.chocolate_item { display: flex; flex-direction: column; text-align: center; background: rgba(0,0,0,0.15); border-radius: 12px; padding: 12px; transition: background 0.3s; }
+.chocolate_section .section_content { padding: 0 60px 30px; display: block; }
+.chocolate_section .chocolate_list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; width: 100%; max-width: 960px; margin: 0 auto; }
+.chocolate_item { display: flex; flex-direction: column; text-align: center; background: rgba(0,0,0,0.15); border-radius: 10px; padding: 8px; transition: background 0.3s; }
 .chocolate_item:hover { background: rgba(85,42,26,0.8); }
-.chocolate_img { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; margin-bottom: 8px; }
-.chocolate_item .name { margin: 8px 0; font-size: 0.95rem; font-weight: 700; }
-.chocolate_item h3 { font-size: 0.85rem; color: var(--gold); margin-bottom: 8px; }
+.chocolate_img { width: 100%; height: 90px; object-fit: cover; border-radius: 8px; margin-bottom: 8px; }
+.chocolate_item .name { margin: 5px 0; font-size: 0.82rem; font-weight: 700; }
+.chocolate_item h3 { font-size: 0.78rem; color: var(--gold); margin-bottom: 5px; }
 .chocolate_item .rating { color: var(--gold); margin: 4px 0; }
 .btn_cof { border: 2px solid var(--gold); border-radius: 8px; padding: 5px 10px; font-size: 0.75rem; background: var(--gold); color: var(--white); cursor: pointer; display: block; margin: 8px auto 0; transition: opacity 0.3s; width: fit-content; }
 .btn_cof:hover { opacity: 0.85; }
@@ -102,13 +113,13 @@ header .navbar { display: flex; padding: 16px 24px; align-items: center; justify
    MENU CAFE
    ================================================ */
 .coffee_section { color: #080808; padding-bottom: 60px; }
-.coffee_section .section_content { padding: 0 40px 20px; display: block; }
-.coffee_section .coffee_list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; }
-.coffee_item { display: flex; flex-direction: column; text-align: center; background: #f9f5f0; border-radius: 12px; padding: 12px; transition: box-shadow 0.3s; }
+.coffee_section .section_content { padding: 0 60px 30px; display: block; }
+.coffee_section .coffee_list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; width: 100%; max-width: 960px; margin: 0 auto; }
+.coffee_item { display: flex; flex-direction: column; text-align: center; background: #f9f5f0; border-radius: 10px; padding: 8px; transition: box-shadow 0.3s; }
 .coffee_item:hover { box-shadow: var(--shadow); }
-.coffee_img { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; margin-bottom: 8px; }
-.coffee_item .name { margin: 8px 0; font-size: 0.95rem; font-weight: 700; }
-.coffee_item h3 { font-size: 0.85rem; color: var(--primary2); margin-bottom: 8px; }
+.coffee_img { width: 100%; height: 90px; object-fit: cover; border-radius: 8px; margin-bottom: 8px; }
+.coffee_item .name { margin: 5px 0; font-size: 0.82rem; font-weight: 700; }
+.coffee_item h3 { font-size: 0.78rem; color: var(--primary2); margin-bottom: 5px; }
 .coffee_item .rating { color: var(--gold); margin: 4px 0; }
 
 /* ================================================
@@ -258,6 +269,12 @@ textarea.input { height: 80px; padding-top: 12px; }
     .img_about { max-width: 240px; height: 210px; border-radius: 14px; }
     .about_text { font-size: 0.82rem; text-align: center; }
 
+    /* Catégorie */
+    .categorie_section .section_content { display: block; padding: 0 8px 16px; overflow: hidden; }
+    .categorie_container { width: 100%; overflow: hidden; }
+    .categorie_item { padding: 14px; }
+    .categorie_img { width: 48%; max-width: 150px; margin: 0 auto 10px; }
+    .categorie_item .name { font-size: 1.1rem; }
 
     /* Menus grille 2 colonnes */
     .chocolate_list, .coffee_list {
